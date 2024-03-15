@@ -2,6 +2,8 @@ import { IconVolumeCross, IconVolumeLoud } from '@/components/base/Icons'
 
 export const MediaPlayerOptions = ({
    track,
+   trackVolume,
+   changeVolume,
    muteTrackVolume,
    loudTrackVolume,
    trackDuration,
@@ -25,6 +27,8 @@ export const MediaPlayerOptions = ({
             step={1}
             min={0}
             max={100}
+            value={trackVolume}
+            onChange={changeVolume}
          />
 
          <button

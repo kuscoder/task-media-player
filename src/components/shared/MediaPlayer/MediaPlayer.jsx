@@ -5,6 +5,7 @@ import './MediaPlayer.styles.scss'
 
 export const MediaPlayer = ({ tracks }) => {
    const [trackIndex, setTrackIndex] = useState(0)
+   const [trackVolume, setTrackVolume] = useState(50)
    const [trackProgress, setTrackProgress] = useState(0)
    const [isPlaying, setIsPlaying] = useState(false)
    const track = tracks[trackIndex]
@@ -27,12 +28,6 @@ export const MediaPlayer = ({ tracks }) => {
    const toNextTrack = () => {
       setTrackIndex(() => (trackIndex < tracks.length - 1 ? trackIndex + 1 : 0))
    }
-
-   // Mute volume
-   const muteTrackVolume = () => {}
-
-   // Set volume on max
-   const loudTrackVolume = () => {}
 
    // Update progress bar and auto play next track
    const startTimer = () => {
@@ -86,6 +81,11 @@ export const MediaPlayer = ({ tracks }) => {
       }
    }, [trackIndex])
 
+   // Change track volume
+   useEffect(() => {
+      audioRef.current.volume = trackVolume / 100
+   }, [trackVolume])
+
    // Pause and clean up on unmount
    useEffect(() => {
       return () => {
@@ -105,8 +105,10 @@ export const MediaPlayer = ({ tracks }) => {
 
          <MediaPlayerOptions
             track={track}
-            muteTrackVolume={muteTrackVolume}
-            loudTrackVolume={loudTrackVolume}
+            trackVolume={trackVolume}
+            changeVolume={(e) => setTrackVolume(e.target.value)}
+            muteTrackVolume={() => setTrackVolume(0)}
+            loudTrackVolume={() => setTrackVolume(100)}
             trackDuration={audioRef.current.duration ? audioRef.current.duration : `${audioRef.current.duration}`}
             trackProgress={trackProgress}
             onChangeTrackTime={(e) => changeTrackTime(e.target.value)}
