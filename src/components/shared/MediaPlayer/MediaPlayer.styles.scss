@@ -1,7 +1,9 @@
 .media-player {
+   position: relative;
+
    display: flex;
    gap: 1rem;
-   padding: 1rem 2rem;
+   padding: 1rem 4rem 1rem 2rem;
 
    border-radius: var(--radius-m);
    background-color: var(--color-block);
@@ -31,10 +33,6 @@
 
          path {
             transition: stroke var(--duration-m), fill var(--duration-m);
-
-            &.fill-when-hover {
-               fill: transparent;
-            }
          }
 
          &:first-child svg,
@@ -52,10 +50,6 @@
 
             path {
                stroke: var(--color-text-default);
-
-               &.fill-when-hover {
-                  fill: var(--color-text-default);
-               }
             }
          }
       }
@@ -108,6 +102,7 @@
    }
 
    &__track {
+      width: 100%;
    }
 
    &__name {
@@ -120,5 +115,37 @@
    }
 
    &__cover {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      z-index: 1;
+      transform: translateY(-50%) translateX(50%);
+
+      overflow: hidden;
+      width: 8rem;
+      height: 8rem;
+
+      border-radius: 50%;
+      box-shadow: var(--shadow-default);
+
+      img {
+         width: 100%;
+         height: 100%;
+      }
+   }
+
+   &_playing {
+      .media-player__cover img {
+         animation: rotate 10s linear infinite;
+      }
+   }
+}
+
+@keyframes rotate {
+   from {
+      transform: rotate(0deg);
+   }
+   to {
+      transform: rotate(360deg);
    }
 }

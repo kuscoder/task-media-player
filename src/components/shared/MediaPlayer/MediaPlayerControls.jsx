@@ -15,7 +15,7 @@ export const MediaPlayerControls = ({ isPlaying, toggleTrackPlaying, toPrevTrack
          type="button"
          onClick={toggleTrackPlaying}
       >
-         <IconPauseStream />
+         <IconPauseStream fill={isPlaying} />
       </button>
 
       <button

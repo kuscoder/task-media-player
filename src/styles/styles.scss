@@ -26,3 +26,7 @@ body {
       box-shadow: 0px 0px 0px 2px var(--color-block), 0px 0px 0px 4px var(--color-text-default) !important;
    }
 }
+
+.fillable.fill {
+   fill: var(--color-text-default);
+}

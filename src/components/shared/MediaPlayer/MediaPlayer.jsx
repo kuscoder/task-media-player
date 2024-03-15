@@ -95,7 +95,7 @@ export const MediaPlayer = ({ tracks }) => {
    }, [])
 
    return (
-      <div className="media-player">
+      <div className={['media-player', isPlaying ? 'media-player_playing' : ''].filter((x) => x).join(' ')}>
          <MediaPlayerControls
             isPlaying={isPlaying}
             toggleTrackPlaying={toggleTrackPlaying}

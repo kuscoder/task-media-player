@@ -38,6 +38,9 @@
    --duration-l: 400ms;
    --duration-xl: 500ms;
 
+   /* Shadows */
+   --shadow-default: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+
    /* TODO: dark mode */
    @media (prefers-color-scheme: dark) {
    }
