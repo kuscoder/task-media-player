@@ -1,0 +1,44 @@
+/* Semantic color variables */
+:root {
+   /* Common colors */
+   --color-background: ;
+   --color-block: ;
+   --color-border: ;
+   --color-secondary: ;
+
+   /* Text colors */
+   --color-text-default: ;
+   --color-text-inverted: ;
+
+   /* Accent colors */
+   --color-accent-xs: ;
+   --color-accent-s: ;
+   --color-accent-m: ;
+   --color-accent-l: ;
+   --color-accent-xl: ;
+
+   /* Font sizes */
+   --text-xs: 0.5rem;
+   --text-s: 0.75rem;
+   --text-m: 1rem;
+   --text-l: 1.25rem;
+   --text-xl: 1.5rem;
+
+   /* Radiuses */
+   --radius-xs: 0.1rem;
+   --radius-s: 0.5rem;
+   --radius-m: 0.75rem;
+   --radius-l: 1rem;
+   --radius-xl: 1.5rem;
+
+   /* Durations */
+   --duration-xs: 100ms;
+   --duration-s: 200ms;
+   --duration-m: 300ms;
+   --duration-l: 400ms;
+   --duration-xl: 500ms;
+
+   /* TODO: dark mode */
+   @media (prefers-color-scheme: dark) {
+   }
+}

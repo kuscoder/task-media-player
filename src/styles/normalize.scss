@@ -1,0 +1,77 @@
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+
+   @media (prefers-reduced-motion: reduce) {
+      scroll-behavior: auto !important;
+      transition: none !important;
+      transition-duration: 0.01ms !important;
+      animation: none !important;
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+   }
+}
+
+* {
+   margin: 0;
+   padding: 0;
+
+   vertical-align: baseline;
+   font: inherit;
+
+   border: none;
+   outline: none;
+}
+
+html {
+   overflow-x: hidden;
+   width: 100vw;
+   width: 100dvw;
+}
+
+body {
+   height: 100vh;
+   height: 100dvh;
+
+   scroll-behavior: smooth;
+   font-synthesis: none;
+   text-rendering: optimizeLegibility;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+   -webkit-text-size-adjust: 100%;
+}
+
+a {
+   cursor: pointer;
+   display: inline-block;
+   text-decoration: none;
+}
+
+b {
+   font-weight: 700;
+}
+
+del {
+   text-decoration: line-through;
+   text-decoration-color: inherit;
+}
+
+small {
+   font-size: var(--text-s);
+}
+
+input {
+   cursor: text;
+   color: inherit;
+}
+
+button {
+   cursor: pointer;
+}
+
+img {
+   display: block;
+   max-width: 100%;
+   user-select: none;
+}
