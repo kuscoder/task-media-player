@@ -3,4 +3,14 @@
    align-items: center;
    justify-content: center;
    height: 100%;
+
+   &__background {
+      position: absolute;
+      width: 100%;
+
+      img {
+         width: 100%;
+         height: auto;
+      }
+   }
 }
