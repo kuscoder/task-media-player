@@ -1,21 +1,21 @@
 /* Semantic color variables */
 :root {
    /* Common colors */
-   --color-background: ;
-   --color-block: ;
-   --color-border: ;
-   --color-secondary: ;
+   --color-background: #e3e3e3;
+   --color-block: #ffffff;
+   --color-border: #253053;
+   --color-secondary: #c5c6c5;
 
    /* Text colors */
-   --color-text-default: ;
-   --color-text-inverted: ;
+   --color-text-default: #000000;
+   --color-text-inverted: #ffffff;
 
    /* Accent colors */
-   --color-accent-xs: ;
-   --color-accent-s: ;
+   --color-accent-xs: #0cb6734d;
+   --color-accent-s: #0cb672a9;
    --color-accent-m: ;
-   --color-accent-l: ;
-   --color-accent-xl: ;
+   --color-accent-l: #05ac6a;
+   --color-accent-xl: #307358;
 
    /* Font sizes */
    --text-xs: 0.5rem;
