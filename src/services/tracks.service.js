@@ -1,5 +1,6 @@
 export const tracksService = {
    async fetchTracks() {
+      // Mock data
       return [
          {
             title: 'Against All Odds',
