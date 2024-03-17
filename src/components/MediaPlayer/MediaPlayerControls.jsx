@@ -1,4 +1,4 @@
-import { IconPauseStream, IconRewindBack, IconRewindNext } from '@/components/base/Icons'
+import { IconPauseStream, IconRewindBack, IconRewindNext } from '@/components/Icons'
 
 export const MediaPlayerControls = ({ isPlaying, toggleTrackPlaying, toPrevTrack, toNextTrack }) => (
    <div className="media-player__controls">

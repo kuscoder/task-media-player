@@ -1,4 +1,4 @@
-import { IconVolumeCross, IconVolumeLoud } from '@/components/base/Icons'
+import { IconVolumeCross, IconVolumeLoud } from '@/components/Icons'
 
 export const MediaPlayerOptions = ({
    track,

@@ -1,6 +1,6 @@
 import { useQuery } from 'react-query'
 import { tracksService } from '@/services/tracks.service'
-import { MediaPlayer } from '@/components/shared/MediaPlayer'
+import { MediaPlayer } from '@/components/MediaPlayer'
 import background from '@/assets/background.png'
 import './App.styles.scss'
 
